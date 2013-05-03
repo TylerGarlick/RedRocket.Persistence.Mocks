@@ -23,11 +23,7 @@ using this tokenized nuspec file.
     <description>Testing implementation for RedRocket.Persistence which helps scaffold testing.</description>
     <projectUrl>https://github.com/TylerGarlick/RedRocket.Persistence.Mocks</projectUrl>
     <dependencies>
-      <dependency id="RedRocket.Persistence.Common" version="1.0.0.0"/>
+      <dependency id="RedRocket.Persistence.Common" version="1.0.0.0" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="RedRocket.Persistence.Mocks.dll" />
-    <file src="RedRocket.Persistence.Mocks.pdb" />
-  </files>
 </package>
