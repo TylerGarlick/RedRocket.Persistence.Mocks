@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>RedRocket.Persistence.Common</id>
+    <version>1.0.0.40485</version>
+    <title>RedRocket Persistence Framework | Common</title>
+    <authors>Tyler Garlick</authors>
+    <owners>Tyler Garlick</owners>
+    <projectUrl>https://github.com/TylerGarlick/RedRocket.Persistence.Common</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Common Framework Functionality</description>
+  </metadata>
+</package>
