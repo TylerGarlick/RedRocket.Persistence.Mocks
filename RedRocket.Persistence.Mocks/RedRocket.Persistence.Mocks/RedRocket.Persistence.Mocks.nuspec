@@ -18,9 +18,9 @@ using this tokenized nuspec file.
     <authors>Tyler Garlick</authors>
     <owners>Red Rocket HQ, Tyler Garlick</owners>
     <id>$id$</id>
-    <title></title>
+    <title>RedRocket Persistence Framework | Mocks for Testing</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Testing implementation for RedRocket.Persistence which helps scaffold testing.</description>
+    <description>Testing implementation for RedRocket.Persistence which helps build quick mocks for testing.</description>
     <projectUrl>https://github.com/TylerGarlick/RedRocket.Persistence.Mocks</projectUrl>
     <dependencies>
       <dependency id="RedRocket.Persistence.Common" version="1.0.0.0" />
