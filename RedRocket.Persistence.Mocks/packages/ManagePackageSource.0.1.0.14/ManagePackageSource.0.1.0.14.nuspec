@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ManagePackageSource</id>
+    <version>0.1.0.14</version>
+    <title>ManagePackageSource</title>
+    <authors>Maarten Balliauw, Xavier Decoster</authors>
+    <owners>Maarten Balliauw, Xavier Decoster</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Manage NuGet package sources from the NuGet PowerShell Console</description>
+    <releaseNotes />
+    <copyright />
+    <language />
+  </metadata>
+</package>
