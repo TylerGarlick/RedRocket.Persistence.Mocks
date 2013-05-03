@@ -17,7 +17,7 @@ using this tokenized nuspec file.
     <version>$version$</version>
     <authors>Tyler Garlick</authors>
     <owners>Red Rocket HQ, Tyler Garlick</owners>
-    <id>$id$</id>
+    <id>RedRocket.Persistence.Mocks</id>
     <title>RedRocket Persistence Framework | Mocks for Testing</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Testing implementation for RedRocket.Persistence which helps build quick mocks for testing.</description>
@@ -26,4 +26,7 @@ using this tokenized nuspec file.
       <dependency id="RedRocket.Persistence.Common" version="1.0.0.0" />
     </dependencies>
   </metadata>
+  <files>
+	<file src="RedRocket.Persistence.Mocks.dll" target="lib\net45" />
+  </files>
 </package>
