@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using RedRocket.Persistence.Common;
-using RedRocket.Persistence.Common.Validation;
+using RedRocket.Utilities.Core.Validation;
 
 namespace RedRocket.Persistence.Mocks
 {
     public class MockRepository<T> : IRepository<T> where T : class
     {
         public List<T> Data { get; set; }
-        
+
         public MockRepository()
         {
             Data = new List<T>();
@@ -39,13 +39,22 @@ namespace RedRocket.Persistence.Mocks
 
         public virtual T Add(T entity)
         {
-            Data.Add(entity);
-            return entity;
+            if (entity.IsObjectValid())
+            {
+                Data.Add(entity);
+                return entity;
+            }
+
+            throw new ObjectValidationException(entity.GetValidationErrors());
         }
 
         public virtual T Update(T entity)
         {
-            return entity;
+            if (entity.IsObjectValid())
+            {
+                return entity;
+            }
+            throw new ObjectValidationException(entity.GetValidationErrors());
         }
 
         public virtual void Delete(T entity)
@@ -53,9 +62,9 @@ namespace RedRocket.Persistence.Mocks
             Data.Remove(entity);
         }
 
-        public IEnumerable<PersistenceValidationError> Validate(T entity)
+        public IEnumerable<ObjectValidationError> Validate(T entity)
         {
-            return Enumerable.Empty<PersistenceValidationError>();
+            return entity.GetValidationErrors();
         }
     }
 }
