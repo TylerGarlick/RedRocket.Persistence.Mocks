@@ -25,6 +25,7 @@ using this tokenized nuspec file.
     <dependencies>
       <dependency id="RedRocket.Persistence.Common" />
     </dependencies>
+    <tags>RedRocket, Persistence, FlitBit</tags>
   </metadata>
   <files>
     <file src="bin\Release\RedRocket.Persistence.Mocks.dll" target="lib\net45" />
